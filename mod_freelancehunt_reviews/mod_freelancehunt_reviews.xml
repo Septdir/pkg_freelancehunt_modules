@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="module" client="site" method="upgrade">
+	<name>MOD_FREELANCEHUNT_REVIEWS</name>
+	<author>Igor Berdichevskiy</author>
+	<creationDate>March 2018</creationDate>
+	<copyright>Copyright (c) 2013 - 2018 Igor Berdicheskiy. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>septdir@gmail.com</authorEmail>
+	<authorUrl>https://septdir.ru</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_FREELANCEHUNT_REVIEWS_DESCRIPTION</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_freelancehunt_reviews.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_freelancehunt_reviews.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_freelancehunt_reviews.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_freelancehunt_reviews.sys.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_freelancehunt_reviews">mod_freelancehunt_reviews.php</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<media destination="mod_freelancehunt_reviews" folder="media">
+		<filename>ajax.js</filename>
+		<filename>ajax.min.js</filename>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="ajax" type="radio"
+					   label="MOD_FREELANCEHUNT_REVIEWS_AJAX"
+					   default="1"
+					   class="btn-group btn-group-yesno">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="limit" type="number"
+					   label="MOD_FREELANCEHUNT_REVIEWS_LIMIT"
+					   default="0"/>
+				<field name="token" type="text"
+					   label="MOD_FREELANCEHUNT_REVIEWS_TOKEN"
+					   required="true"/>
+				<field name="secret" type="text"
+					   label="MOD_FREELANCEHUNT_REVIEWS_SECRET"
+					   class="input-xlarge"
+					   required="true"/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					   label="JFIELD_ALT_LAYOUT_LABEL"
+					   description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+				<field name="moduleclass_sfx" type="textarea"
+					   label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					   description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					   rows="3"/>
+				<field name="cache" type="list"
+					   label="COM_MODULES_FIELD_CACHING_LABEL"
+					   description="COM_MODULES_FIELD_CACHING_DESC"
+					   default="1">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text"
+					   label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					   description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					   default="900"/>
+				<field name="cachemode" type="hidden"
+					   default="static">
+					<option value="static">Static</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

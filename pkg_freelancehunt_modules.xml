@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="package" method="upgrade">
+	<name>PKG_FREELANCEHUNT_MODULES</name>
+	<packagename>freelancehunt_modules</packagename>
+	<author>Igor Berdichevskiy</author>
+	<creationDate>March 2018</creationDate>
+	<copyright>Copyright (c) 2013 - 2018 Igor Berdicheskiy. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>septdir@gmail.com</authorEmail>
+	<authorUrl>https://septdir.ru</authorUrl>
+	<version>1.0.0</version>
+	<description>PKG_FREELANCEHUNT_MODULES_DESCRIPTION</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.pkg_freelancehunt_modules.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.pkg_freelancehunt_modules.sys.ini</language>
+	</languages>
+	<files>
+		<folder type="module" id="mod_freelancehunt_portfolio" client="site">mod_freelancehunt_portfolio</folder>
+		<folder type="module" id="mod_freelancehunt_profile" client="site">mod_freelancehunt_profile</folder>
+		<folder type="module" id="mod_freelancehunt_reviews" client="site">mod_freelancehunt_reviews</folder>
+	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="Freelancehunt Modules Package">
+			https://septdir.ru/update.html?extension=pkg_freelancehunt_modules
+		</server>
+	</updateservers>
+</extension>
