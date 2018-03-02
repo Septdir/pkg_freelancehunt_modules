@@ -6,8 +6,8 @@ Modules package for displaying information from freelancehunt.com
 
 **Supported Joomla versions:** 3.8.0 or later  
 **Read this in other languages:** 
-[English](;https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.md), 
-[Русский](;https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.ru-RU.md).
+[English](https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.md), 
+[Русский](https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.ru-RU.md).
 
 
 ## Package Contents

@@ -1,13 +1,13 @@
 ## Freelancehunt Modules Package
 Пакет модулей для отображения информации с сайта freelancehunt.com
 
-**[Скачать последнюю версию](;https://github.com/Septdir/pkg_freelancehunt_modules/releases/latest)**   
+**[Скачать последнюю версию](https://github.com/Septdir/pkg_freelancehunt_modules/releases/latest)**   
 **[Посмотреть демо](https://septdir.ru/work.html)**
 
 **Поддерживаемые версии Joomla:** 3.8.0 или новее  
 **Прочесть на других языках:**
-[English](;https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.md), 
-[Русский](;https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.ru-RU.md).
+[English](https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.md), 
+[Русский](https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.ru-RU.md).
 
 
 ## Состав пакета
