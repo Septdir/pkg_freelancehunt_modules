@@ -99,11 +99,8 @@ use Joomla\CMS\HTML\HTMLHelper;
 							} ?>
 						</dd>
 					</dl>
-
 				</div>
 			</div>
 		</div>
-		<?php // echo '<pre>', print_r($item, true), '</pre>';
-		?>
 	</div>
 <?php endforeach; ?>
