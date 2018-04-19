@@ -10,18 +10,14 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Factory;
 use Joomla\CMS\Helper\ModuleHelper;
 
-$data = $module->id . ', ' . Factory::getApplication()->input->get('Itemid');
-if ($params->get('ajax', 0))
-{
-	$items = array();
-	$data  .= ', ajax';
-}
-else
-{
-	include_once(__DIR__ . '/helper.php');
-	$items = modFreelancehuntReviewsHelper::getItems($params);
-}
-require ModuleHelper::getLayoutPath('mod_freelancehunt_reviews', $params->get('layout', 'default'));
+require_once __DIR__ . '/helper.php';
+
+$helper = new modFreelancehuntReviewsHelper();
+$ajax   = ($params->get('ajax', 0));
+$limit  = $params->get('limit', 0);
+$layout = $params->get('layout', 'default');
+$items  = ($ajax) ? array() : $helper::getItems($params);
+
+require ModuleHelper::getLayoutPath($module->module, $layout);
