@@ -3,12 +3,12 @@
 	<name>PKG_FREELANCEHUNT_MODULES</name>
 	<packagename>freelancehunt_modules</packagename>
 	<author>Igor Berdichevskiy</author>
-	<creationDate>March 2018</creationDate>
+	<creationDate>April 2018</creationDate>
 	<copyright>Copyright (c) 2013 - 2018 Igor Berdicheskiy. All rights reserved.</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
 	<authorEmail>septdir@gmail.com</authorEmail>
 	<authorUrl>https://septdir.ru</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>PKG_FREELANCEHUNT_MODULES_DESCRIPTION</description>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.pkg_freelancehunt_modules.sys.ini</language>

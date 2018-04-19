@@ -2,12 +2,12 @@
 <extension version="3.8" type="module" client="site" method="upgrade">
 	<name>MOD_FREELANCEHUNT_PORTFOLIO</name>
 	<author>Igor Berdichevskiy</author>
-	<creationDate>March 2018</creationDate>
+	<creationDate>April 2018</creationDate>
 	<copyright>Copyright (c) 2013 - 2018 Igor Berdicheskiy. All rights reserved.</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
 	<authorEmail>septdir@gmail.com</authorEmail>
 	<authorUrl>https://septdir.ru</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>MOD_FREELANCEHUNT_PORTFOLIO_DESCRIPTION</description>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.mod_freelancehunt_portfolio.ini</language>
