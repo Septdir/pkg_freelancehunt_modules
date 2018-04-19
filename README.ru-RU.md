@@ -4,7 +4,7 @@
 **[Скачать последнюю версию](https://github.com/Septdir/pkg_freelancehunt_modules/releases/latest)**   
 **[Посмотреть демо](https://septdir.ru/work.html)**
 
-**Поддерживаемые версии Joomla:** 3.8.7 и новее  
+**Поддерживаемые версии Joomla:** 3.8.7  и более поздние версии  
 **Прочесть на других языках:**
 [English](https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.md), 
 [Русский](https://github.com/Septdir/pkg_freelancehunt_modules/blob/master/README.ru-RU.md).
