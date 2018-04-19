@@ -10,7 +10,6 @@
 
 defined('_JEXEC') or die;
 
-//echo '<pre>', print_r($profile, true), '</pre>';
 ?>
 <?php if ($error = $profile->get('error')): ?>
 	<div class="alert alert-error">

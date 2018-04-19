@@ -12,14 +12,14 @@
 		$('[data-mod-freelancehunt-profile]').each(function () {
 			// Prepare variables
 			var block = $(this),
-				data = $.parseJSON('[' + block.data('mod-freelancehunt-profile') + ']');
+				module_id = block.data('mod-freelancehunt-profile');
 
 			// Get Profile HTML
 			$.ajax({
 				type: 'POST',
 				dataType: 'json',
-				url: '/index.php?option=com_ajax&module=freelancehunt_profile&format=json&Itemid=' + data[1],
-				data: {module_id: data[0]},
+				url: '/index.php?option=com_ajax&module=freelancehunt_profile&format=json',
+				data: {module_id: module_id},
 				success: function (response) {
 					if (response.data) {
 						block.html(response.data);
