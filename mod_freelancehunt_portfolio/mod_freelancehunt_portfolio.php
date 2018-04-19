@@ -10,21 +10,14 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Factory;
 use Joomla\CMS\Helper\ModuleHelper;
 
-$data = $module->id . ', ' . Factory::getApplication()->input->get('Itemid');
+require_once __DIR__ . '/helper.php';
 
-if ($params->get('ajax', 0))
-{
-	$items = array();
-	$data  .= ', ajax';
-}
-else
-{
-	include_once(__DIR__ . '/helper.php');
-	$items = modFreelancehuntPortfolioHelper::getItems($params);
-}
+$helper = new modFreelancehuntPortfolioHelper();
+$ajax   = ($params->get('ajax', 0));
+$limit  = $params->get('limit', 0);
+$layout = $params->get('layout', 'default');
+$items  = ($ajax) ? array() : $helper::getItems($params);
 
-
-require ModuleHelper::getLayoutPath('mod_freelancehunt_portfolio', $params->get('layout', 'default'));
+require ModuleHelper::getLayoutPath($module->module, $layout);

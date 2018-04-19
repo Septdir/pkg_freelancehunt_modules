@@ -14,19 +14,21 @@ use Joomla\CMS\Helper\ModuleHelper;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
 
-if ($params->get('ajax', 0))
+if ($ajax)
 {
 	HTMLHelper::_('jquery.framework');
 	HTMLHelper::_('script', 'media/mod_freelancehunt_portfolio/ajax.min.js', array('version' => 'auto'));
 }
 ?>
 
-<div data-mod-freelancehunt-portfolio="<?php echo $data; ?>">
+<div <?php echo ($ajax) ? 'data-mod-freelancehunt-portfolio="' . $module->id . '"' : ''; ?>>
 	<div class="items">
-		<?php require ModuleHelper::getLayoutPath('mod_freelancehunt_portfolio',
-			$params->get('layout', 'default') . '_items'); ?>
+		<?php if (!$ajax)
+		{
+			require ModuleHelper::getLayoutPath($module->module, $layout . '_items');
+		} ?>
 	</div>
-	<?php if ($params->get('ajax', 0) && $params->get('limit', 0)): ?>
+	<?php if ($ajax && $limit): ?>
 		<div class="row-fluid">
 			<a class="btn span12 ajax-more"><?php echo Text::_('MOD_FREELANCEHUNT_PORTFOLIO_AJAX_MORE'); ?></a>
 		</div>

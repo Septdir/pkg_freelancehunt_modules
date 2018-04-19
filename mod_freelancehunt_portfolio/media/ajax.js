@@ -9,26 +9,20 @@
 
 (function ($) {
 	$(document).ready(function () {
-		$('[data-mod-freelancehunt-portfolio*="ajax"]').each(function () {
+		$('[data-mod-freelancehunt-portfolio]').each(function () {
 			// Prepare variables
 			var block = $(this),
-				data = $.parseJSON('[' + block.data('mod-freelancehunt-portfolio').replace('ajax', '"ajax"') + ']'),
+				module_id = block.data('mod-freelancehunt-portfolio'),
 				itemsBlock = block.find('.items'),
 				more = block.find('.ajax-more');
-
-			// Get items
-			getItems();
-			more.on('click', function () {
-				getItems();
-			});
 
 			// Send Ajax
 			function getItems() {
 				$.ajax({
 					type: 'POST',
 					dataType: 'json',
-					url: '/index.php?option=com_ajax&module=freelancehunt_portfolio&format=json&Itemid=' + data[1],
-					data: {module_id: data[0], offset: itemsBlock.find('.item').length},
+					url: '/index.php?option=com_ajax&module=freelancehunt_portfolio&format=json',
+					data: {module_id: module_id, offset: itemsBlock.find('.item').length},
 					success: function (response) {
 						if (response.data) {
 							$(response.data).appendTo(itemsBlock);
@@ -39,6 +33,12 @@
 					}
 				});
 			}
+
+			// Get items
+			getItems();
+			more.on('click', function () {
+				getItems();
+			});
 		});
 	});
 })(jQuery);
