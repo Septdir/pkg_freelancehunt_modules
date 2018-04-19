@@ -19,7 +19,6 @@ if ($params->get('ajax', 0))
 	HTMLHelper::_('jquery.framework');
 	HTMLHelper::_('script', 'media/mod_freelancehunt_portfolio/ajax.min.js', array('version' => 'auto'));
 }
-echo '<pre>', print_r('aaaa', true), '</pre>';
 ?>
 
 <div data-mod-freelancehunt-portfolio="<?php echo $data; ?>">
