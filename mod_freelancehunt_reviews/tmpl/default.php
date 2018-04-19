@@ -17,7 +17,7 @@ use Joomla\CMS\Language\Text;
 if ($params->get('ajax', 0))
 {
 	HTMLHelper::_('jquery.framework');
-	HTMLHelper::_('script', 'media/mod_freelancehunt_reviews/ajax.js', array('version' => 'auto'));
+	HTMLHelper::_('script', 'media/mod_freelancehunt_reviews/ajax.min.js', array('version' => 'auto'));
 }
 ?>
 
