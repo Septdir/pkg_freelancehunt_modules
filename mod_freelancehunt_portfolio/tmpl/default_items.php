@@ -31,6 +31,5 @@ defined('_JEXEC') or die;
 				</div>
 			</div>
 		</div>
-		<?php // echo '<pre>', print_r($item, true), '</pre>'; ?>
 	</div>
 <?php endforeach; ?>
