@@ -44,6 +44,10 @@
 					   label="MOD_FREELANCEHUNT_REVIEWS_SECRET"
 					   class="input-xlarge"
 					   required="true"/>
+				<field name="referral" type="text"
+					   label="MOD_FREELANCEHUNT_REVIEWS_REFERRAL"
+					   hint="Byv3Y"
+					   class="input-small"/>
 			</fieldset>
 			<fieldset name="advanced">
 				<field name="layout" type="modulelayout"
